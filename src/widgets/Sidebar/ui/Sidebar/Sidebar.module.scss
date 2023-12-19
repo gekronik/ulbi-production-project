@@ -2,10 +2,10 @@
     height: calc(100vh - var(--navbar-height)); // сайдбар должен распологатсья на всю страницу за исключением шапки навбара
     width: var(--sidebar-width);
     background: var(--inverted-bg-color);
-
     position: relative; // делаем релатив чтобы кнопку поставит на правильное место
     transition: width 0.3s;
 }
+
 .collapsed {
     width: var(--sidebar-width-collapsed);
 }
@@ -17,6 +17,7 @@
     justify-content: center;
     width: 100%;
 }
+
 .lang {
     margin-left: 20px;
 }
