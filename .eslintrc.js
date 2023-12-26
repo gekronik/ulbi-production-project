@@ -45,6 +45,7 @@ module.exports = {
                 ignoreAttribute: ['data-testid', 'to'],
             },
         ],
+        'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     },
     globals: {
         __IS_DEV__: true,
