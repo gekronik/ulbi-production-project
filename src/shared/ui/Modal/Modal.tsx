@@ -11,6 +11,7 @@ interface ModalProps {
     children?: ReactNode
     isOpen?: boolean
     onClose?: () => void
+    lazy?:boolean
 }
 const ANIMATION_DELAY = 300;
 export const Modal = (props: ModalProps) => {
@@ -19,13 +20,21 @@ export const Modal = (props: ModalProps) => {
         children,
         isOpen,
         onClose,
+        lazy,
     } = props;
 
     const [isClosing, setIsClosing] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>(); // референс в котором храним таймаут, чтобы мы смогли очистить таймаут
     const { theme } = useTheme();
 
-    // если модльное окно по какой то причине демонтируетс из дом дерева
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isOpen]);
+
+    // если модльное окно по какой то причине демонтируется из дом дерева
     // отработает таймаут и мы попытаемся изменить стейт не существующего компонента и приожение упадет
     // поэтому таймаут помещаем в реф
     const closeHandler = useCallback(() => {
@@ -63,6 +72,9 @@ export const Modal = (props: ModalProps) => {
         [cls.isClosing]: isClosing,
     };
 
+    if (lazy && !isMounted) {
+        return null;
+    }
     return (
         <Portal>
             <div className={classNames(cls.modal, mods, [className, theme, 'app_modal'])}>
