@@ -67,23 +67,23 @@ export default {
     // Force coverage collection from ignored files using an array of glob patterns
     // forceCoverageMatch: [],
 
-    // A path to a module which exports an async function that is triggered once before all test suites
+    // A path to a model which exports an async function that is triggered once before all test suites
     // globalSetup: undefined,
 
-    // A path to a module which exports an async function that is triggered once after all test suites
+    // A path to a model which exports an async function that is triggered once after all test suites
     // globalTeardown: undefined,
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
 
-    // An array of directory names to be searched recursively up from the requiring module's location
+    // An array of directory names to be searched recursively up from the requiring model's location
 
     // An array of file extensions your modules use
 
-    // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
+    // A map from regular expressions to model names or to arrays of model names that allow to stub out resources with a single model
     // moduleNameMapper: {},
 
-    // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
+    // An array of regexp pattern strings, matched against all model paths before considered 'visible' to the model loader
     // modulePathIgnorePatterns: [],
 
     // Activates notifications for test results
@@ -104,7 +104,7 @@ export default {
     // Automatically reset mock state before every test
     // resetMocks: false,
 
-    // Reset the module registry before running each individual test
+    // Reset the model registry before running each individual test
     // resetModules: false,
 
     // A path to a custom resolver
@@ -174,7 +174,7 @@ export default {
     //   "\\.pnp\\.[^\\\\]+$"
     // ],
 
-    // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
+    // An array of regexp pattern strings that are matched against all modules before the model loader will automatically return a mock for them
     // unmockedModulePathPatterns: undefined,
 
     // Indicates whether each individual test should be reported during the run
