@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import cls from './Button.module.scss';
 
@@ -29,14 +29,14 @@ export const Button = memo((props:ButtonProps) => {
     const {
         className,
         children,
-        theme,
+        theme = ButtonTheme.OUTLINE,
         square,
         size = ButtonSize.M,
         disabled,
         ...otherProps
     } = props;
 
-    const mods: Record<string, boolean> = { // record: ключ-строка, значение-boolean какая то переменная
+    const mods: Mods = {
         [cls.square]: square, // если переменная true , то навешиваем класс
         [cls.disabled]: disabled,
     };
