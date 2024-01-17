@@ -26,12 +26,13 @@
     }
   ],
   "profile": {
-    "first": "Фродо",
-    "lastname": "Бэггинс",
-    "age": 22,
+    "first": "Фродо123",
+    "lastname": "Бэггинс123",
+    "age": 32,
     "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
+    "country": "Ukraine",
+    "city": "Moscow123",
     "username": "admin",
-    "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg" }
+    "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
+  }
 }
