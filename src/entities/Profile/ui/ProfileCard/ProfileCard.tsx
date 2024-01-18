@@ -116,7 +116,9 @@ export const ProfileCard = (props: ProfileCardProps) => {
                     readonly={readonly}
                 />
                 <Input
-                    value={data?.avatar}
+                    value={
+                        __PROJECT__ !== 'storybook' ? data?.avatar : 'https://bipbap.ru/wp-content/uploads/2021/07/1551511801_1.jpg'
+                    }
                     placeholder={t('Введите ссылку на аватар')}
                     className={cls.input}
                     onChange={onChangeAvatar}
