@@ -6,7 +6,6 @@ import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDeco
 import ProfilePage from 'pages/ProfilePage/ui/ProfilePage';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
-import AvatarImg from 'shared/assets/tests/storybook.png';
 
 export default {
     title: 'pages/ProfilePage',
@@ -31,7 +30,7 @@ Normal.decorators = [StoreDecorator({
             first: 'rrr',
             currency: Currency.EUR,
             city: 'Moscow',
-            avatar: AvatarImg,
+            avatar: 'https://bipbap.ru/wp-content/uploads/2021/07/1551511801_1.jpg',
         },
     },
 })];
@@ -48,7 +47,7 @@ Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
             first: 'rrr',
             currency: Currency.EUR,
             city: 'Moscow',
-            avatar: AvatarImg,
+            avatar: 'https://bipbap.ru/wp-content/uploads/2021/07/1551511801_1.jpg',
         },
     },
 })];
