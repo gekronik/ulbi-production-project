@@ -16,7 +16,7 @@ const options = [
     { value: Currency.EUR, content: Currency.EUR },
     { value: Currency.USD, content: Currency.USD },
 ];
-
+// wow
 export const CurrencySelect = memo(({
     className, value, onChange, readonly,
 }: CurrencySelectProps) => {
