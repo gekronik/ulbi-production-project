@@ -14,7 +14,7 @@ export interface ArticlesPageSchema extends EntityState<Article>{
     hasMore: boolean
 
     // filters
-    view:ArticleView
+    view: ArticleView
     order: SortOrder
     sort: ArticleSortField
     search: string
